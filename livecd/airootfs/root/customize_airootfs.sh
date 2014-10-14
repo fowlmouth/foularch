@@ -1,5 +1,7 @@
 #!/bin/bash
 
+USER="arch"
+
 set -e -u
 
 sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
@@ -11,7 +13,12 @@ usermod -s /usr/bin/zsh root
 cp -aT /etc/skel/ /root/
 chmod 700 /root
 
-useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh arch
+useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh $USER
+pushd /home/$USER
+echo "exec startxfce4" >> .xinitrc
+#install "Arch Ultimate Installer"
+wget --no-check-certificate https://github.com/helmuthdu/aui/tarball/master -O - | tar xz
+popd
 
 chmod 750 /etc/sudoers.d
 chmod 440 /etc/sudoers.d/g_wheel

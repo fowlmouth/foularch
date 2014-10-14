@@ -14,7 +14,8 @@ verbose=""
 pacman_conf=${work_dir}/pacman.conf
 script_path=$(readlink -f ${0%/*})
 
-platforms=(x86_64)# i686)
+platforms=x86_64
+#platforms=(x86_64 i686)
 
 _usage ()
 {
