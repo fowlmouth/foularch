@@ -60,3 +60,14 @@ wvdial
 xl2tpd
 zd1211-firmware
 zsh
+
+base-devel
+links
+virtualbox-guest-utils
+ttf-droid
+kde4
+xorg-drivers
+xorg-server
+xorg-xinit
+xorg-twm
+nvidia-beta
