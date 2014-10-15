@@ -61,19 +61,20 @@ xl2tpd
 zd1211-firmware
 zsh
 
-links
+linux-headers
+nvidia-libgl-beta
+nvidia-utils-beta
+nvidia-beta
 virtualbox-guest-utils
 xorg-drivers
 xorg-server
 xorg-xinit
 xorg-twm
 
-linux-headers
-nvidia-libgl-beta
-nvidia-utils-beta
-nvidia-beta
-
 ttf-droid
+ttf-liberation
+ttf-ubuntu-font-family
+
 xfce4
 sakura
 git
@@ -81,7 +82,11 @@ wget
 links
 chromium
 chromium-pepper-flash-dev
+pulseaudio
+hexchat
 
 base-devel
 atool
 yaourt
+gparted
+
